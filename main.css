@@ -27,11 +27,14 @@
 	color: white;
 	z-index: 1;
 }
+#main .carousel-container .overlay .container,
+#main .carousel-container .overlay .row {
+	height: 100%;
+}
 
 #footer {
 	background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5472);
 }
 #footer a {
-	color: white;
 	text-decoration: none;
 }
