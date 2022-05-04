@@ -9,13 +9,13 @@
 	color: #a1de38 !important;
 }
 
-#main .carousel-inner img{
+#main .carousel-container {
+	position: relative;
+}
+#main .carousel-container img{
 	max-height: 75vh;
 	object-fit: cover;
 	filter: grayscale(60%);
-}
-#main .carousel-container {
-	position: relative;
 }
 #main .carousel-container .overlay {
 	position: absolute;
@@ -33,10 +33,16 @@
 }
 #main .carousel-container .btn-platzi {
 	background-color: #97c93e;
-	color: white;
 }
 #main .carousel-container .btn-platzi:hover {
 	background-color: #89b839;
+	transition: .4s;
+}
+#main .carousel-container .btn-platzi:not(:hover) {
+	transition: .4;
+}
+#main .speakers-container {
+	
 }
 
 #footer {
