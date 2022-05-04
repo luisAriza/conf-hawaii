@@ -27,10 +27,6 @@
 	color: white;
 	z-index: 1;
 }
-#main .carousel-container .overlay .container,
-#main .carousel-container .overlay .row {
-	height: 100%;
-}
 #main .carousel-container .btn-platzi {
 	background-color: #97c93e;
 }
@@ -40,9 +36,6 @@
 }
 #main .carousel-container .btn-platzi:not(:hover) {
 	transition: .4;
-}
-#main .speakers-container {
-	
 }
 
 #footer {
