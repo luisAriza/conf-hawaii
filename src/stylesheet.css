@@ -10,10 +10,12 @@
 }
 
 #main .carousel-container {
+	margin-top: 56px;
 	position: relative;
 }
 #main .carousel-container img{
-	max-height: 360px;
+	min-height: 40vh;
+	max-height: 480px;
 	object-fit: cover;
 	filter: grayscale(60%);
 }
@@ -27,14 +29,14 @@
 	color: white;
 	z-index: 1;
 }
-#main .btn-platzi {
+#main .btn-platzi, .btn-platzi {
 	background-color: #97c93e;
 }
-#main .btn-platzi:hover {
+#main .btn-platzi:hover, .btn-platzi:hover {
 	background-color: #89b839;
 	transition: .4s;
 }
-#main .btn-platzi:not(:hover) {
+#main .btn-platzi:not(:hover), .btn-platzi:not(:hover) {
 	transition: .4;
 }
 
