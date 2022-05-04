@@ -27,14 +27,14 @@
 	color: white;
 	z-index: 1;
 }
-#main .carousel-container .btn-platzi {
+#main .btn-platzi {
 	background-color: #97c93e;
 }
-#main .carousel-container .btn-platzi:hover {
+#main .btn-platzi:hover {
 	background-color: #89b839;
 	transition: .4s;
 }
-#main .carousel-container .btn-platzi:not(:hover) {
+#main .btn-platzi:not(:hover) {
 	transition: .4;
 }
 
