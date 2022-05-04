@@ -1,9 +1,31 @@
 #header img {
 	width: 88px;
 }
-.text-platzi {
+#header .text-platzi {
 	color: #97c93e !important;
 	font-weight: 600;
+}
+#header .text-platzi:hover {
+	color: #bafb4b !important;
+}
+
+#main .carousel-inner img{
+	max-height: 75vh;
+	object-fit: cover;
+	filter: grayscale(60%);
+}
+#main .carousel-container {
+	position: relative;
+}
+#main .carousel-container .overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0, 0.5);
+	color: white;
+	z-index: 1;
 }
 
 #footer {
@@ -11,4 +33,5 @@
 }
 #footer a {
 	color: white;
+	text-decoration: none;
 }
