@@ -12,34 +12,35 @@
 	<title>Conf en Hawaii | Bootstrap</title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="88" class="scrollspy-example" tabindex="0">
 	<header id="header">
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 			<div class="container">
 				<a class="navbar-brand" href="#">
 					<img src="assets/images/platzi-logo.png" alt="Logo de Platzi">
 					Conf Hawaii
 				</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+					aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<div class="collapse navbar-collapse" id="navbar">
 					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Conferencia</a>
+							<a class="nav-link" aria-current="page" href="#conf">Conferencia</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Oradores</a>
+							<a class="nav-link" href="#speakers">Oradores</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Lugar y la fecha</a>
+							<a class="nav-link" href="#place-time">Lugar y la fecha</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Conviértete en orador</a>
+							<a class="nav-link" href="#become-speaker">Conviértete en orador</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-platzi" href="#">Comprar tickets</a>
+							<a class="nav-link text-platzi" href="#" data-bs-toggle="modal" data-bs-target="#buy-modal">Comprar
+								tickets</a>
 						</li>
 					</ul>
 				</div>
@@ -48,7 +49,7 @@
 	</header>
 
 	<main id="main">
-		<section class="carousel-container">
+		<section id="conf" class="carousel-container">
 			<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
@@ -75,13 +76,14 @@
 							</p>
 							<h4 class="mb-3">¡Te esperamos!</h4>
 							<a href="#" class="btn btn-outline-light me-1">Quiero ser orador</a>
-							<button type="button" class="btn btn-platzi text-light">Comprar tickets</button>
+							<button type="button" class="btn btn-platzi text-light" data-bs-toggle="modal"
+								data-bs-target="#buy-modal">Comprar tickets</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="speakers-container mt-4">
+		<section id="speakers" class="pt-4">
 			<div class="container">
 				<div class="row">
 					<div class="col text-center text-uppercase mb-2">
@@ -157,7 +159,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="place-time bg-dark text-light">
+		<section id="place-time" class="bg-dark text-light">
 			<div class="container-fluid">
 				<div class="row h-100 align-items-center">
 					<div class="col-lg-6 px-0">
@@ -179,7 +181,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="become-speaker container my-4">
+		<section id="become-speaker" class="container py-4">
 			<div class="row">
 				<div class="col text-uppercase text-center mb-1">
 					<small>Conviértete en un</small>
@@ -247,6 +249,35 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="modal fade" id="buy-modal" aria-hidden="true" aria-labelledby="modalToggleLabel" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="modalToggleLabel">Comprar Tickets</h2>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form class="row">
+						<div class="col">
+							<div class="input-group mb-3">
+								<span class="input-group-text" id="basic-addon1">@</span>
+								<input type="text" class="form-control" placeholder="Username" aria-label="Username"
+									aria-describedby="basic-addon1">
+							</div>
+						</div>
+					</form>
+					<div class="alert alert-info" role="alert">
+						Recibirás un correo de confirmación si sales sorteado.
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-secondary" data-bs-target="#" data-bs-toggle="modal">Cancelar</button>
+					<button class="btn btn-platzi text-light" data-bs-target="#" data-bs-toggle="modal">Comprar</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
