@@ -6,7 +6,7 @@
 	font-weight: 600;
 }
 #header .text-platzi:hover {
-	color: #bafb4b !important;
+	color: #a1de38 !important;
 }
 
 #main .carousel-inner img{
@@ -30,6 +30,13 @@
 #main .carousel-container .overlay .container,
 #main .carousel-container .overlay .row {
 	height: 100%;
+}
+#main .carousel-container .btn-platzi {
+	background-color: #97c93e;
+	color: white;
+}
+#main .carousel-container .btn-platzi:hover {
+	background-color: #89b839;
 }
 
 #footer {
