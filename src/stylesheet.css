@@ -13,7 +13,7 @@
 	position: relative;
 }
 #main .carousel-container img{
-	max-height: 75vh;
+	max-height: 360px;
 	object-fit: cover;
 	filter: grayscale(60%);
 }
