@@ -10,10 +10,12 @@
 }
 
 #main .carousel-container {
+	margin-top: 56px;
 	position: relative;
 }
 #main .carousel-container img{
-	max-height: 520px;
+	min-height: 40vh;
+	max-height: 480px;
 	object-fit: cover;
 	filter: grayscale(60%);
 }
