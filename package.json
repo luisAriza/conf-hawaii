@@ -1,15 +1,18 @@
 {
-  "name": "bootstrap",
+  "name": "Conf en Hawaii",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "source": "src/index.html",
   "scripts": {
-    "deploy": "gh-pages -d src"
+    "start": "parcel -p 2664",
+    "build": "rm -rf && parcel build --no-source-maps --public-url .",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "Luis Ariza <luismanuelariza@hotmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "gh-pages": "^3.2.3"
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "parcel": "^2.6.2"
   }
 }
