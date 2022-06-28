@@ -1,6 +1,6 @@
 # Conferencia en Hawaii
 
-Esta es una pagina promocionando una **Conferencia en Hawaii** organizada por <ins>Platzi</ins> sobre novedades del mundo Tech, hecha con el framework de CSS [**Bootstrap**](https://getbootstrap.com/) aplicando **Responsive Design** para los diferentes tamaños de pantalla.
+Esta es una pagina promocionando una [Conferencia en Hawaii](https://luisariza.github.io/conf_hawaii/) organizada por <ins>Platzi</ins> sobre novedades del mundo Tech, hecha con el framework de CSS [**Bootstrap**](https://getbootstrap.com/) aplicando **Responsive Design** para los diferentes tamaños de pantalla.
 
 Integré la herramienta de [**Parcel**](https://parceljs.org/) para automatizar y optimizar el codigo.
 
